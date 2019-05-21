@@ -77,7 +77,8 @@ def all_holidays_with_bbq(holiday_hash)
   season = []
   holiday_hash.collect do |key, value|
     value.collect do |season, item|
-      season = item.include?("BBQ")
+      season_ = item.include?("BBQ")
+      season << season_
     end
   end
   return season
