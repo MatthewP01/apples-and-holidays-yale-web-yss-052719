@@ -79,5 +79,5 @@ def all_holidays_with_bbq(holiday_hash)
       item.include?("BBQ")
     end
   end
-  value
+  holiday_hash
 end
